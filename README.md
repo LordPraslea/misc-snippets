@@ -4,7 +4,7 @@ This is a list of misc stuff and scripts i've built over the time.
 I have a huge list of snippets out of which I consider these to be of use for other people.
 Please note that the scripts included here are proof of concepts and prototypes. 
 Most of them have been refactored, enhanced and implemented in projects that my clients use.
-If you're interested in the extended version contact me at enotsoul[at]lba.im.
+If you're interested in the extended version contact me at [link AndreiClinciu.net](http://andreiclinciu.net) or at enotsoul[at]lba.im.
 
 
 
@@ -56,6 +56,8 @@ Save the princess commandline game in ROmanian written for my wife.
 
 ## Site crawler
 A basic site crawler written in Tcl. Very basic and very old. Should not be used today. I've since then moved on to use headless browsers with full javascript support.
+
+
 
 
 # Copyright
