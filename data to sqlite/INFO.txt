@@ -1,0 +1,24 @@
+Program that searches a sqlite database for info (indexed sql)
+
+
+
+Step 1: List all documents you want to convert.. Put them in 1 folder.. or more:) (subfolders allowed)
+Step 2: Convert PDF & DOC files to .txt files in another output folder
+Step 3: Analyse every .txt file and add it to the database correctly
+Step 4: make a program that searches the db and gives you the results
+Step 5: Optimilization the program to use diacritics like ĂÎȚÂȘăîțâș 
+
+
+Database info
+(Book id) (Book name) (Category) (Author) (Pages)
+(Page Id) (Book Id) (Text)
+
+CREATE TABLE Books(bookID INTEGER PRIMARY KEY autoincrement, BookName TEXT COLLATE NOCASE, categoryID INT DEFAULT 0, authorID INT DEFAULT 0, pages INT DEFAULT 0);
+CREATE VIRTUAL TABLE BooksData USING fts4(id INT,type TEXT, data TEXT);
+
+Info:
+antiword /home/lostone/Ortodoxie/Colectie\ carti/Andrei\ Andreicut\ -\ Pledoarie\ pentru\ o\ viata\ curata.doc > /home/lostone/viatacurata.txt
+pdftotext /home/lostone/Ortodoxie/Hexaimeron/Astrologia_lui_Dumnezeu_si_astrologia_omului.pdf /home/lostone/Ortodoxie/Hexaimeron/Astrologia_lui_Dumnezeu_si_astrologia_omului.pdf.txt
+
+#antiword .. doc to text
+#xpdf using pdftotext for pdf to text conversions..
